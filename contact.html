@@ -11,7 +11,7 @@
   <!-- Bootstrap core CSS -->
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -26,7 +26,9 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
     integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&family=Nunito&family=Piedra&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&family=Nunito&family=Piedra&display=swap"
+    rel="stylesheet">
   <script src="form.js"></script>
 
   <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
@@ -35,10 +37,19 @@
   <script type="text/javascript" src="js/script.js"></script>
 
   <link rel="stylesheet" href="css/contact.css">
-  
+
 
   <style>
-
+    #error_message{
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  /* background: url('/images/no.png'); */
+  padding: 0px;
+  text-align: center;
+  font-size: 16px;
+  transition: all 0.5s ease;
+}
+   
   </style>
 
 
@@ -57,7 +68,7 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
           <a class="nav-item nav-link" href="index.html">Home</a>
-          <a class="nav-item nav-link" href="about.html" >About Me</a>
+          <a class="nav-item nav-link" href="about.html">About Me</a>
           <a class="nav-item nav-link" href="images/resume.pdf" target="_blank">Resume</a>
           <a class="nav-item nav-link" href="blog.html" target="_blank">Blog</a>
           <a class="nav-item nav-link active " href="contact.html">Contact Me</a>
@@ -70,8 +81,11 @@
   <main>
 
 
-    <form name="form" id="form" action="" method="POST" onsubmit=" return validate()">
-    
+    <!-- <form name="form" id="form" action="" method="POST" onsubmit=" return validate()"> -->
+
+    <!-- <div id="error_message"></div> -->
+    <form name="form" id="form" onsubmit="return validate();">
+
 
       <div class="container">
         <div class="contact-box">
@@ -81,18 +95,19 @@
 
 
             <!-- name  -->
-            
-            <input type="text" class="field" name="name" placeholder="Your Name" >
-            
-
-            <input type="email" class="field" name="email"  placeholder="Your Email" >
-            
-            <input type="text" class="field" name="phone" placeholder="Your Phone" name="phone">
+            <div id="error_message"></div>
+            <input type="text" class="field" name="name" placeholder="Your Name">
             
 
-            <textarea class="field area" name="msg" placeholder="Message" name="message"></textarea>
-            
-         
+
+            <input type="text" class="field" name="email" placeholder="Your Email">
+
+            <input type="text" class="field" name="phone" placeholder="Your Phone">
+
+
+            <textarea class="field area" name="msg" placeholder="Message"></textarea>
+
+
             <button type="submit" class="btn">Send</button>
             <!-- <input type="submit" value="Submit"> -->
 
@@ -102,6 +117,8 @@
       </div>
       <br /> <br />
     </form>
+
+
 
   </main>
   <!--footer starts from here-->

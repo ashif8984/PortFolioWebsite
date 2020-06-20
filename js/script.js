@@ -4,47 +4,44 @@
 
 function validate(){
 
+
     var name = document.form.name;
     var email = document.form.email;
     var phone = document.form.phone;
     var msg = document.form.msg;
-  
-
-    if (name.value.length <= 0){
-        alert("Name is Required");
-        name.focus();
-        return false;
-    } 
+    var error_message = document.getElementById("error_message");
+    
+    error_message.style.padding = "10px";
+    
+    var text;
+    if(name.value.length <= 0){
+      text = "Please Enter valid Name";
+      error_message.innerHTML = text;
+      return false;
+    }
 
     if (email.value.length <= 0){
-        alert("Email is Required");
-        email.focus();
+        text = "Email is Required";
+        error_message.innerHTML = text;
         return false;
     } 
 
-    if (phone.value.length <= 0){
-        alert("Phone is Required");
-        phone.focus();
-        return false;
-    } 
-
-    var x = document.form.phone.value;
-    if (isNaN(x) ) {
-        // text = "Please enter valid number";
-        alert("Please enter valid number ");
-        msg.focus();
-        return false;
-        
-      }
-   
-    // document.getElementById("demo").innerHTML = text;
+    if(isNaN(phone.value) || phone.value.length != 10){
+      text = "Please Enter valid Phone Number";
+      error_message.innerHTML = text;
+      return false;
+    }
     
+    if(msg.value.length <= 10){
+      text = "Please Enter More Than 10 Characters";
+      error_message.innerHTML = text;
+      return false;
+    }
+    // alert("Form Submitted Successfully!");
+    // window.location.assign("sample.html")
+    // setTimeout("location.href = 'https://www.tutorialspoint.com/javascript/javascript_page_redirect.htm';",5000);
+    
+    setTimeout(function() {window.location = "thankyou.html" });
 
-    if (msg.value.length <= 0){
-        alert("Please enter some message ");
-        msg.focus();
-        return false;
-    } 
-    console.log(document.form.email.value);
-    return false;
-}
+    return true;
+  }
