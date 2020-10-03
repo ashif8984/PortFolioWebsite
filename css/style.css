@@ -21,6 +21,46 @@
     background-color: #28df99;
     
   }
+
+/* Card Styles */
+
+.card{
+  width: 230px;
+  height: 370px;
+  
+
+}
+.card-img-top{
+  width: 228px;
+    height: 200px;
+}
+.card-body{
+  padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #32e0c4;
+}
+
+.card-title{
+
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  text-align: center;
+
+
+}
+.card-text{
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.btn_card{
+  font-size: 12px; 
+  margin-left: 40px;
+  border-radius: 30px ;
+  width: 10em;
+}
  
 
  .email_btn {
