@@ -37,7 +37,7 @@
   
       .left {
        /* background: url("/images/cont1.jpg") no-repeat center;*/
-       background: url("/images/cont1.jpg") no-repeat center; 
+       background: url("images/cont1.jpg") no-repeat center; 
         background-size: cover;
         height: 100%;
       }
