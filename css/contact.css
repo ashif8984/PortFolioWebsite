@@ -17,8 +17,8 @@
         left: 0;
         top: 0;
         /*background: url("/images/cont1.jpg") no-repeat center;*/
-          
-        background: url("https://ashif8984bucket.s3.us-east-2.amazonaws.com/StaticWebsite_S3/staticfiles/cont1.jpg") no-repeat center; */
+        background-color: #03c4a1;
+        /* background: url("/images/contactme.jpg") no-repeat center; */
         background-size: cover;
         filter: blur(50px);
         z-index: -1;
@@ -37,7 +37,7 @@
   
       .left {
        /* background: url("/images/cont1.jpg") no-repeat center;*/
-        background: url("https://ashif8984bucket.s3.us-east-2.amazonaws.com/StaticWebsite_S3/staticfiles/cont1.jpg") no-repeat center; 
+       background: url("/images/cont1.jpg") no-repeat center; 
         background-size: cover;
         height: 100%;
       }
