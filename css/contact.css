@@ -37,7 +37,9 @@
   
       .left {
        /* background: url("/images/cont1.jpg") no-repeat center;*/
-       background: url("images/cont1.jpg") no-repeat center; 
+       /* background: url("images/cont1.jpg") no-repeat center;  */
+       /* background: url("/images/cont1.jpg") no-repeat center;  */
+       background: url("https://images.wallpaperscraft.com/image/origami_plane_art_128345_300x168.jpg") center; 
         background-size: cover;
         height: 100%;
       }
