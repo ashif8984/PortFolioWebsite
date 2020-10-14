@@ -6,7 +6,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 150px 100px;
+        padding: 50px 50px;
       }
   
       .container:after {
@@ -16,9 +16,7 @@
         height: 100%;
         left: 0;
         top: 0;
-        /*background: url("/images/cont1.jpg") no-repeat center;*/
-        background-color: #03c4a1;
-        /* background: url("/images/contactme.jpg") no-repeat center; */
+        background: url("/images/cont1.jpg") no-repeat center;
         background-size: cover;
         filter: blur(50px);
         z-index: -1;
@@ -36,16 +34,13 @@
       }
   
       .left {
-       /* background: url("/images/cont1.jpg") no-repeat center;*/
-       /* background: url("images/cont1.jpg") no-repeat center;  */
-       /* background: url("/images/cont1.jpg") no-repeat center;  */
-       background: url("https://images.wallpaperscraft.com/image/origami_plane_art_128345_300x168.jpg") center; 
-        background-size: cover;
-        height: 100%;
+       background: url("/images/cont1.jpg") no-repeat center;
+      background-size: cover;
+      height: 100%;
       }
   
       .right {
-        padding: 25px 40px;
+        padding: 25px 20px;
       }
   
       h2 {
@@ -107,11 +102,9 @@
       }
   
   
-  
-  
       @media screen and (max-width: 880px) {
         .contact-box {
-          grid-template-columns: 1fr;
+          grid-template-columns: 2fr;
         }
   
         .left {
