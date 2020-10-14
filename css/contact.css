@@ -16,7 +16,7 @@
         height: 100%;
         left: 0;
         top: 0;
-        background: url("/images/cont1.jpg") no-repeat center;
+        background: url("/images/cont1.JPG") no-repeat center;
         background-size: cover;
         filter: blur(50px);
         z-index: -1;
@@ -34,7 +34,7 @@
       }
   
       .left {
-       background: url("/images/cont1.jpg") no-repeat center;
+       background: url("/images/cont1.JPG") no-repeat center;
       background-size: cover;
       height: 100%;
       }
