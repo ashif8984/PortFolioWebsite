@@ -18,7 +18,7 @@
 
   body {
     font-family: 'Noto Sans', sans-serif;
-    background-color: #28df99;
+    background-color: #29E6D9;
     
   }
 
@@ -45,14 +45,17 @@
 .card-title{
 
   margin-bottom: 0.75rem;
-  font-size: 0.9rem;
+  font-size: 2px;
   text-align: center;
+  line-height: 1;
+  padding: 
 
 
 }
 .card-text{
-  font-size: 0.8rem;
+  font-size: 18px;
   text-align: center;
+  font-family: 'Rubik', sans-serif;
 }
 
 .btn_card{
@@ -85,6 +88,10 @@
     padding-right: 1rem;
     /* padding-bottom: 2rem; */
     padding-left: 1rem;
+  }
+
+  .carousel-item{
+    padding: 3% 7%;
   }
 
   
@@ -120,9 +127,9 @@
     width: 100%;
     background-color: #263238;
     min-height: 60px;
-    position: fixed;
+    position: relative;
     bottom: 0;
-    padding: 10px 0px 5px 0px;
+    padding: 10px 0px 10px 0px;
   }
 
   .pt2 {
