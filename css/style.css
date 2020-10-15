@@ -15,12 +15,22 @@
   color: #4d4d4d;
 
   }
+  h3 {
+    font-family: 'Bree Serif', serif;
+    /* text-indent: 10%; */
+    line-height: 2;
+    /* margin-top: 50px; */
+    margin-left: 10px;
+   padding-left: 50px;
+  }
+
+
 
   body {
     font-family: 'Noto Sans', sans-serif;
-    background-color: #29E6D9;
     
   }
+ 
 
 /* Card Styles */
 
@@ -76,6 +86,7 @@
       border-radius:30px;
       cursor: pointer;
       transition: .3s;
+      margin-top: 80px;
     }
   
   .email_btn:hover {
@@ -84,24 +95,83 @@
     text-decoration: none;
   }
   .jumbotron{
-    /* padding-top: 2rem; */
+    padding-top: 2rem;
     padding-right: 1rem;
-    /* padding-bottom: 2rem; */
+    padding-bottom: 8rem;
     padding-left: 1rem;
+    margin-bottom: 0px;
+    
+  }
+
+  .skill-section{
+    /* padding-top: 2rem; */
+    position: relative;
+    padding-bottom: 8rem;
+    /* height: 100%; */
+    /* margin-bottom: 0px; */
+    /* margin: 100px 0; */
+    /* margin-bottom: 80px; */
+    /* margin-top: 20px; */
+    /* padding-bottom: 200px; */
+  }
+  .container-fluid{
+    padding: 3% 7%;
+}
+  
+  .skill-row {
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    font-size: 1.5rem;
+  }
+  .skill-cloud {
+    width: 35%;
+    padding-left: 50px;
+    padding-top: 3rem;
+    /* padding-right: 50px; */
+    margin-left: 200px;
+    
+  }
+  .skill-food {
+    width: 15%;
+    /* float: none; */
+    
+    margin-right: 30px;
+  }
+
+  .hobby-section{
+    position: relative;
+    height: 100%;
+    margin-bottom: 0px;
+    padding-bottom: 6rem;
+  }
+  .hobby-first{
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-left: 50px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.3rem;
+  }
+
+  h4{
+    padding-left: 10px;
+    padding-right: 100px;
+    padding-top: 3rem;
+    margin-left: 50px;
+    font-family: 'Balsamiq Sans', cursive;
   }
 
   .carousel-item{
     padding: 3% 7%;
   }
 
-  
-  
 
 .profile-pic{
-  width: 20%;
-  border-radius: 70%;
-  margin: auto ;
-  padding-top: 10px;
+  width: 30%;
+  border-radius: 100%;
+
+  margin-top: 60px;
+  
 }
 
 
@@ -110,6 +180,8 @@
     font-family: 'Poppins', sans-serif;
     font-size: 1.5em;
     color: #A52A2A;
+    margin-top: 30px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: 768px) {

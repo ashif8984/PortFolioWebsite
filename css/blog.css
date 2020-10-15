@@ -1,0 +1,31 @@
+body {
+          
+    background-color: #03c4a1;
+
+    }    
+
+h1{
+font-family: 'Poppins', sans-serif;
+font-size: 4.5em;
+text-align: center;
+color: #4d4d4d;
+
+}
+
+.btn:hover {
+  background-color: #27ae60;
+}
+
+.card-head{
+    font-size: 18px;
+    color: #07031a;
+    font-family: 'Open Sans', sans-serif;
+}
+.card-detail{
+    font-size: 15px;
+    font-family: 'Bree Serif', serif;
+    
+}
+.crd-bod{
+    background-color: #d8d3cd;
+}
