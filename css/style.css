@@ -1,3 +1,8 @@
+
+html {
+  scroll-behavior: smooth;
+ }
+
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
@@ -24,7 +29,14 @@
    padding-left: 50px;
   }
 
-
+  h4{
+    padding-left: 10px;
+    padding-right: 100px;
+    padding-top: 3rem;
+    margin-left: 50px;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Rubik', sans-serif;
+  }
 
   body {
     font-family: 'Noto Sans', sans-serif;
@@ -77,20 +89,20 @@
  
 
  .email_btn {
-      width: 10%;
-      padding: 0.5rem 2.5rem;
+      width: 50%;
+      padding: 0.5rem 5.5rem;
       font-family: 'Noto Sans', sans-serif;
-      background-color: #158467;
+      background-color: #e43f5a;
       color: whitesmoke;
       font-size: 1.2rem;
-      border-radius:30px;
+      border-radius: 8px;
       cursor: pointer;
       transition: .3s;
       margin-top: 80px;
     }
   
   .email_btn:hover {
-    background-color: #519872;
+    background-color: #f40552;
     color: whitesmoke;
     text-decoration: none;
   }
@@ -117,6 +129,64 @@
   .container-fluid{
     padding: 3% 7%;
 }
+
+.mail-section{
+  /* text-align: center; */
+  margin-left: auto;
+  margin-right: auto;
+}
+.skill-email{
+  width: 12%;
+  position: relative;;
+     left: 40%;
+     top:  50%;
+}
+
+.news-title{
+  text-align: center;
+  font-size: 30px;
+  
+}
+
+@media screen and (max-width: 600px) {
+  .news-title{
+    font-size: 20px;
+    width: 100%;
+  }
+}
+
+.news-input{
+  outline: none;
+  border: none;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+  
+
+}
+
+.form-signin{
+  /* display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left; */
+    margin-left: 15%;
+    margin-right:15%;
+    width: 70%;
+}
+
+.news-btn{
+  padding: 8px 20px;
+  background-color: #ec5858;
+  border-color: #ec5858;
+
+}
+.news-btn:hover{
+  background-color: crimson;
+  border-color: crimson;
+}
+
+
   
   .skill-row {
     width: 50%;
@@ -153,13 +223,6 @@
     font-size: 1.3rem;
   }
 
-  h4{
-    padding-left: 10px;
-    padding-right: 100px;
-    padding-top: 3rem;
-    margin-left: 50px;
-    font-family: 'Ubuntu', sans-serif;
-  }
 
   .carousel-item{
     padding: 3% 7%;
@@ -167,13 +230,12 @@
 
 
 .profile-pic{
-  width: 30%;
+  width: 25%;
   border-radius: 100%;
-
+  /* box-shadow: 30px 15px 30px 10px#00ffff; */
   margin-top: 60px;
   
 }
-
 
 
   #summary{
@@ -189,6 +251,10 @@
       font-size: 3.5rem;
     }
   }
+
+
+
+
 
   /*footer*/
   .col_white_amrc {
