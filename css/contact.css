@@ -1,16 +1,16 @@
 
    body{
-     background-color: #07689f ;
+     background-color: #80bdab ;
    }
    
    .container {
         position: relative;
         max-width: 100%;
-        height: 100%;
+        height: 50rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 70px 50px 100px;
+        padding: 100px 50px 100px;
       }
   
       .container:after {
@@ -29,14 +29,16 @@
       }
   
       .contact-box {
-        max-width: 850px;
+        /* max-width: 900px; */
+        width: 60rem;
+        height: 40rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
         align-items: center;
         text-align: center;
         /* background-color: #fff; */
-        background-color: #01c5c4;
+        background-color: #d9e4dd;
         box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
       }
   
@@ -44,12 +46,14 @@
        /* background: url("https://images.unsplash.com/photo-1486893002286-04c6a8a8de6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80") no-repeat center; */
        background: url("https://images.unsplash.com/photo-1546027658-7aa750153465?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80") no-repeat center;
       background-size: cover;
-      height: 100%;
+      /* height: 100%; */
+      height: 40rem;
       opacity: 0.8;
       }
   
       .right {
         padding: 25px 20px;
+        height: 40rem;
       }
   
       h2 {
@@ -74,12 +78,11 @@
         width: 100%;
         border: 2px solid rgba(0, 0, 0, 0);
         outline: none;
-        /* background-color: rgba(230, 230, 230, 0.6); */
         background-color: #e0ece4;
         border-radius: 6px;
         padding: 0.5rem 1rem;
         font-size: 1rem;
-        margin-bottom: 22px;
+        margin-bottom: 40px;
         transition: .3s;
       }
   
@@ -100,10 +103,11 @@
   
       .btn {
         width: 100%;
-        padding: 0.5rem 1rem;
-        background-color: #335d2d;
-        /* background-color: #32e0c4; */
-        color: #fff;
+        padding: 0.5rem 2rem;
+        margin-top: 25px;
+        background-color: #ec5858;
+        border-color: #ec5858;
+        color: white;
         font-size: 1.1rem;
         border: none;
         outline: none;
@@ -112,20 +116,36 @@
       }
   
       .btn:hover {
-        background-color: #50d890;
-        color: black;
+        background-color: crimson;
+        color: white;
         border: 0.5px solid black;
              }
-  
-  
   
   
       @media screen and (max-width: 880px) {
         .contact-box {
           grid-template-columns: 2fr;
+          height: 50rem;
+          width: 80%;
+          margin-top: 50px;
+          /* margin-bottom: 40px; */
+          
         }
   
         .left {
-          height: 150px;
+          height: 180px;
+
         }
+
+        .field {
+          width: 90%;
+ 
+        }
+
+        .btn {
+          width: 90%;
+        
+        }
+        
+        
       }

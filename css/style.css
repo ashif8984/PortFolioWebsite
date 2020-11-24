@@ -16,7 +16,7 @@ html {
   font-family: 'Poppins', sans-serif;
   font-size: 4.5em;
   letter-spacing: -1px;
-  background-color: #ff9a76);
+  /* background-color: #ff9a76; */
   color: #4d4d4d;
 
   }
@@ -89,13 +89,14 @@ html {
  
 
  .email_btn {
-      width: 50%;
-      padding: 0.5rem 5.5rem;
+      width: 30%;
+      padding: 0.8rem 3.5rem;
       font-family: 'Noto Sans', sans-serif;
       background-color: #e43f5a;
+      /* background-color: #892cdc; */
       color: whitesmoke;
       font-size: 1.2rem;
-      border-radius: 8px;
+      border-radius: 30px;
       cursor: pointer;
       transition: .3s;
       margin-top: 80px;
