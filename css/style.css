@@ -149,12 +149,6 @@ html {
   
 }
 
-@media screen and (max-width: 600px) {
-  .news-title{
-    font-size: 20px;
-    width: 100%;
-  }
-}
 
 .news-input{
   outline: none;
@@ -162,6 +156,7 @@ html {
   margin-bottom: 20px;
   margin-top: 20px;
   text-align: center;
+
   
 
 }
@@ -177,9 +172,10 @@ html {
 }
 
 .news-btn{
-  padding: 8px 20px;
+ 
   background-color: #ec5858;
   border-color: #ec5858;
+  
 
 }
 .news-btn:hover{
@@ -196,11 +192,14 @@ html {
     font-size: 1.5rem;
   }
   .skill-cloud {
-    width: 35%;
-    padding-left: 50px;
+    
+    /* padding-left: 30px; */
     padding-top: 3rem;
     /* padding-right: 50px; */
-    margin-left: 200px;
+    margin-left: 100px;
+    width: 15rem;
+    height: 10rem;
+    opacity: 0.9;
     
   }
   .skill-food {
@@ -229,10 +228,16 @@ html {
     padding: 3% 7%;
   }
 
+  .rounded {
+    width: 10rem;
+    height: 10rem;
+    opacity: 0.8;
+  }
 
 .profile-pic{
   width: 25%;
   border-radius: 100%;
+  
   /* box-shadow: 30px 15px 30px 10px#00ffff; */
   margin-top: 60px;
   
@@ -253,8 +258,57 @@ html {
     }
   }
 
+  @media screen and (max-width: 600px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+
+    .profile-pic{
+      width: 50%;
+    }
+
+    .rounded {
+      width: 7rem;
+      height: 7rem;
+    }
+
+    .skill-cloud {
+      margin-left: 50px;
+      width: 10rem;
+      height: 10rem;
+      
+    }
+
+    .feature-title{
+      font-size: 20px;
+    }
+
+    .hobby-first{
+      font-size: 1.0rem;
+    }
+
+    .news-title{
+      font-size: 20px;
+      /* width: 30rem; */
+      width: 260px;
+      margin-left: 0px;
+      padding-right: 20px;
+    }
+
+    .skill-email {
+      /* margin-left: 5px; */
+      width: 7rem;
+      height: 7rem;
+      left: 50px;
+    bottom: 0px;
+    top: 25px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+      
+    }
 
 
+  }
 
 
   /*footer*/
