@@ -5,20 +5,27 @@ body {
     }    
 
 h1{
-font-family: 'Poppins', sans-serif;
-font-size: 4.5em;
-text-align: center;
-color: #4d4d4d;
+    font-family: 'Patua One', cursive;
+    font-size: 3.5em;
+    margin-top: 30px ;
+    text-align: center;
+    color: #9d0191;
 
+}
+
+.btn{
+    margin-top: 20px;
+    background-color: #9088d4;
 }
 
 .btn:hover {
-  background-color: #27ae60;
+  background-color: #892cdc;
 }
 
+
 .card-head{
-    font-size: 18px;
-    color: #07031a;
+    font-size: 20px;
+    color: #52057b;
     font-family: 'Open Sans', sans-serif;
 }
 .card-detail{
@@ -28,4 +35,29 @@ color: #4d4d4d;
 }
 .crd-bod{
     background-color: #d8d3cd;
+}
+.card-img-top{
+    height: 10rem;
+    width: 14.2rem;
+}
+.row {
+    margin-bottom: 20px;
+    
+}
+.card-class{
+    margin-right: -10px;
+}
+
+@media screen and (max-width: 600px){
+
+    .row {
+        width: 15rem;
+        padding-left: 4rem;
+    }
+    .card-class{
+        margin-bottom: 20px;
+    }
+
+
+
 }
