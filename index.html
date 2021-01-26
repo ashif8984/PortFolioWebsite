@@ -39,9 +39,11 @@
     rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  
 
-
-  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -51,18 +53,20 @@
 <body>
   <header>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.html">Ashif Eqbal</a>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg" >
+      <a class="navlogo" href="index.html">Ashif Eqbal</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link active" href="index.html">Home</a>
-          <a class="nav-item nav-link" href="about.html">About Me</a>
-          <a class="nav-item nav-link" href="blog.html" >Blog</a>
-          <a class="nav-item nav-link " href="contact.html">Contact Me</a>
+          <a class="nav-item nav-link nav-active" href="index.html"><i class='fas fa-home' style='font-size:22px'></i> Home</a>
+         
+          <a class="nav-item nav-link" href="about.html"><i class="fa fa-user-circle" style="font-size:22px"></i> AboutMe</a>
+          <a class="nav-item nav-link" href="blog.html"><i class="fa fa-bookmark" style="font-size:22px"></i>  Blogs</a>
+          <a class="nav-item nav-link " href="contact.html"><i class="fa fa-paper-plane" style="font-size:22px"></i> Contact</a>
 
         </div>
       </div>
@@ -73,13 +77,15 @@
 
   <main role="main">
 
-    <section class="jumbotron text-center text-white" style="background-color: #f1ae89;">
+    <section class="jumbotron text-center text-white">
       <div class="container">
         
         <h1 style="font-size: 60px;">Ashif Eqbal</h1>
         <p id="summary"> <b>
 
-            Hello, my name is Ashif Eqbal. I am DevOps Engineer & UI/UX Designer
+            Hello, my name is Ashif Eqbal. 
+            <br>
+            I am AWS Certified Solution Architect and DevOps Engineer 
           </b>
         
         </p>
@@ -102,7 +108,7 @@
 
     <!-- Skills Section -->
 
-    <section class="skill-section" style="background-color: #ffe8df; "">
+    <section class="skill-section">
     <div class="container-fluid" style="text-align: left;">
       <h3 class="display-6">What I know : </h3>
 
@@ -123,7 +129,7 @@
                 <img src="images/devops3.jpg" class="rounded" alt="Cinque Terre">
                 <div class="card-body">
                   <p class="card-text"><strong>DevOps</strong></p>
-                  <p class="card-text" >Automated Build, Deployment and CICD experience</p>
+                  <p class="card-text" >Complete Automated pipeline from commit to deployment and using IaaC</p>
                 </div>
 
               </div>
@@ -133,7 +139,8 @@
                 <div class="card-body">
                   <p class="card-text"><strong>Python</strong></p>
                   <p class="card-text">
-                    Programming and Scripting experience in Python
+                    Programming and Scripting Knowledge in Python and using libraries 
+                    framework 
 
                   </p>
                 </div>
@@ -148,7 +155,7 @@
                 <div class="card-body">
                   <p class="card-text"><strong>AWS</strong></p>
                   <p class="card-text">
-                    Keen Interest and Knowledge in developing on AWS
+                    Experience Developing and Migration applications on AWS Cloud
                   </p>
 
                 </div>
@@ -168,9 +175,10 @@
                 </img>
                 <!-- <ion-icon name="laptop-outline"></ion-icon> -->
                 <div class="card-body">
-                  <p><strong>Configuration Managment</strong></p>
+                  <p class="card-text"><strong>Configuration Management</strong></p>
                   <p class="card-text">
                     Experience in automated deployment and infrastructure provisioning
+                    using Chef, Ansible
                   </p>
                 </div>
 
@@ -179,11 +187,11 @@
               <div class="col-md-4 text-center">
 
                 <!-- <h2>Heading</h2> -->
-                <img src="images/docker.png" class="rounded" alt="Cinque Terre" >
+                <img src="images/docker3.png" class="rounded" alt="Cinque Terre" >
                 <div class="card-body">
-                  <p><strong>Docker</strong></p>
+                  <p class="card-text"><strong>Container Technology</strong></p>
                   <p class="card-text">
-                    Worked on Docker Technology for Linux and Windows environments
+                    Worked on Docker and Kubernetes for Linux and Windows environments
                   </p>
                 </div>
 
@@ -196,9 +204,9 @@
                 <img src="images/htmlcss.jpeg" class="rounded" alt="Cinque Terre">
                 <div class="card-body">
                   <!-- <p class="card-text"><strong>AWS</strong></p> -->
-                  <p><strong>Front-End Design</strong></p>
+                  <p class="card-text"><strong>HTML, CSS & JavaScript</strong></p>
                   <p class="card-text">
-                    Love to make Web-Application using HTML, CSS, Bootstrap
+                    Love to make Web-Application using HTML, CSS, Bootstrap  & JavaScript
                   </p>
 
                 </div>
@@ -218,9 +226,9 @@
                 </img>
                 <!-- <ion-icon name="laptop-outline"></ion-icon> -->
                 <div class="card-body">
-                  <p><strong>Linux</strong></p>
+                  <p class="card-text"><strong>Linux </strong></p>
                   <p class="card-text">
-                    Can work in Ubuntu and RHEL flavoured Linux
+                    Experience working on RHEL and Ubuntu Linux as SRE Engineer
                   </p>
                 </div>
 
@@ -231,9 +239,9 @@
                 <!-- <h2>Heading</h2> -->
                 <img src="images/django.png" class="rounded" alt="Cinque Terre" >
                 <div class="card-body">
-                  <p><strong>Django</strong></p>
+                  <p class="card-text"><strong>Django</strong></p>
                   <p class="card-text">
-                    Good experience in developing web applications using  Django</p>
+                     Framework</p>
                 </div>
 
               </div>
@@ -242,11 +250,11 @@
               <div class="col-md-4 text-center">
 
                 <!-- <h2>Heading</h2> -->
-                <img src="images/ansible-logo.png" class="rounded" alt="Cinque Terre" >
+                <img src="images/mongo.png" class="rounded" alt="Cinque Terre" >
                 <div class="card-body">
-                  <p class="card-text"><strong>Ansible</strong></p>
+                  <p class="card-text"><strong>MongoDB</strong></p>
                   <p class="card-text">
-                    Hands-On with Ansible for Automation and Deployments
+                    Worked on MongoDB Database to support No-Sql Database Engines
                   </p>
 
                 </div>
@@ -362,27 +370,58 @@
 
   </main>
 
-  <!--footer starts from here-->
-  <footer class="footer">
-
-    <!--foote_bottom_ul_amrc ends here-->
-    <p class="text-center">Copyright 2020 | Designed by <a href="#">Ashif Eqbal</a></p>
-
-    <ul class="social_footer_ul">
-
-      <!-- <li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li> -->
-      <li><a href="https://twitter.com/AshifEqbal12" target="_blank"><i class="fab fa-twitter"></i></a></li>
-      <li><a href="https://www.linkedin.com/in/ashif-eqbal-4ba85278/" target="_blank"><i
-            class="fab fa-linkedin"></i></a></li>
-      <li><a href="https://github.com/ashif8984" target="_blank"> <i class="fab fa-github"></i></a></li>
-
-      <li><a href="mailto:ashif8984@hotmail.com"><i class="fas fa-envelope"></i></a></li>
-
-    </ul>
-    <!--social_footer_ul ends here-->
+ 
 
 
+
+  <footer class="mainfooter" role="contentinfo">
+    <div class="footer-middle">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <!--Column1-->
+          <div class="footer-pad">
+            <h3 class="heading-footer">Contact Me</h3>
+            <ul class="list-unstyled">
+              
+              <li><a href="#"> <i class='fas fa-envelope'></i> &nbsp ashif8984@hotmail.com</a></li>
+              <li><a><i class="fa fa-map-marker-alt"></i> &nbsp Jharkhand, India</a></li>
+              
+            </ul>
+          </div>
+        </div>
+
+        
+ 
+        <div class="col-lg-6">
+          <h3 class="heading-footer">Follow Me</h3>
+          <p class="footer-text">
+            Questions or Concerns ?
+            A simple word of Hello will keep the relation and friendship keep going, keep in touch.
+          </p>
+              <ul class="social-network social-circle">
+               <li><a href="#" class="icoFacebook" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+               <li><a href="#" class="icoLinkedin" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+               <li><a href="#" class="icoLinkedin" title="Github"><i class="fab fa-github"></i></a></li>
+               <li><a href="https://devops-li91744.slack.com" class="icoLinkedin" title="Slack"><i class="fab fa-slack"></i></a></li>
+              </ul>				
+      </div>
+      </div>
+
+    <div class="row">
+      <div class="col-md-12 copy">
+        <p class="text-center">&copy; Copyright 2021 - Ashif Eqbal.  All rights reserved.</p>
+      </div>
+    </div>
+  
+  
+    </div>
+    </div>
   </footer>
+
+
+
+
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
