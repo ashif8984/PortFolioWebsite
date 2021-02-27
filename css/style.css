@@ -252,40 +252,45 @@ html {
      left: 40%;
      top:  50%;
 }
+.form-signin{
+
+    margin-left: 15%; 
+     margin-right:5%;
+    width: 70%;
+}
+
 
 .news-title{
   text-align: center;
+  /* padding-left: 100px; */
   font-size: 30px;
   
 }
 
 
 .news-input{
-  outline: none;
-  border: none;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  outline: auto;
+  border: 1px solid black;
+  width: 600px;
+  height: 45px;
+  padding-left: 10px;
+  margin: 10px 0px 20px 300px;
   text-align: center;
 
-  
-
 }
 
-.form-signin{
-  /* display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left; */
-    margin-left: 15%;
-    margin-right:15%;
-    width: 70%;
-}
 
 .news-btn{
  
   background-color: #ec5858;
   border-color: #ec5858;
+  border-radius: 25px;
   
+  width: 650px;
+  height: 50px;
+  padding-left: 10px;
+  margin: 10px 0px 20px 280px;
+  text-align: center;
 
 }
 .news-btn:hover{
@@ -373,9 +378,6 @@ html {
   }
 
 
- /* footer */
-
-  
 
 /*FOOTER*/
 
@@ -597,6 +599,18 @@ ul.social-network li {
   .copy {
     font-size: 15px;
   }
+
+  .news-input, .news-btn{
+
+    width: 257px;
+    height: 40px;
+    padding-left: 40px;
+    margin: 0px 0px 20px 0px;
+    text-align: center;
+  
+  }
+
+
 
 }
 
