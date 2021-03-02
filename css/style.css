@@ -236,7 +236,7 @@ html {
 }
 
 .mail-section{
-  /* text-align: center; */
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 40px;
@@ -246,56 +246,50 @@ html {
      top:  50%;
  
 }
-.skill-email{
-  width: 12%;
-  position: relative;
-     left: 40%;
-     top:  50%;
+.pic-email{
+  width: 10%;
 }
-.form-signin{
-
-    margin-left: 15%; 
-     margin-right:5%;
-    width: 70%;
-}
-
 
 .news-title{
   text-align: center;
-  /* padding-left: 100px; */
-  font-size: 30px;
+  font-size: 35px;
   
 }
+.form-signin{
 
+    /* margin-left: 15%; 
+     margin-right:5%;
+    width: 70%; */
+}
 
 .news-input{
+  text-align: center;
   outline: auto;
   border: 1px solid black;
   width: 600px;
   height: 45px;
-  padding-left: 10px;
-  margin: 10px 0px 20px 300px;
-  text-align: center;
-
+  font-size: 20px;
+  font-family: 'Rubik', sans-serif;
 }
 
-
 .news-btn{
- 
   background-color: #ec5858;
   border-color: #ec5858;
-  border-radius: 25px;
-  
-  width: 650px;
-  height: 50px;
-  padding-left: 10px;
-  margin: 10px 0px 20px 280px;
-  text-align: center;
+  outline: auto;
+  width: 250px;
+  height: 45px;
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: inherit;
+  font-style: initial;
+  font-family: 'Poppins', sans-serif;
 
 }
 .news-btn:hover{
-  background-color: crimson;
   border-color: crimson;
+  background-color: #7579e7;
+
+  
 }
 
 
@@ -531,25 +525,31 @@ ul.social-network li {
   }
 
   .news-title{
-    font-size: 20px;
-    /* width: 30rem; */
-    width: 260px;
-    margin-left: 0px;
-    padding-right: 20px;
+    font-size: 25px;
+    width: 450px;
+    margin: 0px;
+    padding-bottom: 30px;
+
   }
 
-  .skill-email {
-    /* margin-left: 5px; */
-    width: 7rem;
-    height: 7rem;
-    left: 50px;
-    bottom: 0px;
-    top: 25px;
-    padding-top: 0px;
-    margin-bottom: 0px;
+  .pic-email {
+    width: 6rem;
+    height: 6rem;
+
+  }
+
+  .news-input, .news-btn{
+
+    width: 257px;
+    height: 40px;
     
+    padding-left: 40px;
+    margin: 0px 0px 20px 0px;
+    text-align: center;
+    font-size: 18px;
+   
+  
   }
-
   
   .email_btn {
     width: 10px;
@@ -577,7 +577,7 @@ ul.social-network li {
   }
 
   .abt_btn:hover {
-    background-color: #949cdf;
+    background-color: #494c66;
     border-color: #1ab7af ;
     text-decoration: none;
   }
@@ -600,15 +600,7 @@ ul.social-network li {
     font-size: 15px;
   }
 
-  .news-input, .news-btn{
 
-    width: 257px;
-    height: 40px;
-    padding-left: 40px;
-    margin: 0px 0px 20px 0px;
-    text-align: center;
-  
-  }
 
 
 
