@@ -2,8 +2,86 @@
 
 
 
-function validate(){
+  $(".form-signin").submit(function(event){
+     $(".news-btn").css("background-color","grey").text("Subscribed");
+     $( "#isSubscribed" ).text( "Thank You signing up 😊. Stay Tuned!!" ).show();
+     event.preventDefault();
+  });
 
+  // $(".contactForm").submit(function( event ) {
+
+  //   if ( $( "#name" ).val().length <= 0 ) {
+  //       // $( "#error_message" ).text( "Please Enter valid Name" );
+  //       $('#name').before('<span class="error_message">❌ Please Enter valid Name</span>');
+  //     return false;
+  //     event.preventDefault();
+     
+  //   } else{
+
+  //   }
+    
+
+
+  //   if ( $( "#email" ).val().length <= 0 ) {
+  //     // $( "#error_message" ).text( "Email is required" );
+  //       // $( "#email" ).attr( "placeholder", " ❌ Email is required" );
+
+  //       $('#email').before('<span class="error_message">❌ Email is required</span>');
+
+  //      return false;
+  //      event.preventDefault();
+  // }
+
+  // //   if (!$('#email').val()) 
+  // //   // $('#email').parent().append('<span class="error">Email is required</span>');
+
+  // //   $("#email").parent().after("<div class='validation' style='color:red;'>Please enter email address</div>");
+
+
+  // }
+  // );
+
+  
+
+  $(document).ready(function() {
+    $('.contactForm').submit( function(e){
+      e.preventDefault();
+      $(".error_message").remove();
+
+      var checkValidate = false;
+
+
+
+
+      if ($( "#name" ).val().length  < 1) {
+        $('#name').before('<span class="error_message">This field is required</span>');
+        return false;
+      }
+
+      if ($( "#email" ).val().length  < 1) {
+        $('#email').before('<span class="error_message">This field is required</span>');
+        return false;
+      }
+
+      if ($( "#phone" ).val().length  < 10  || isNaN($( "#phone" ).val()) ) {
+        $('#phone').before('<span class="error_message">Enter Valid Phone Number</span>');
+        return false;
+      }
+
+      if ($( "#msg" ).val().length  < 10) {
+        $('#msg').before('<span class="error_message">Please Enter More Than 10 Characters</span>');
+        return false;
+      }
+
+
+      
+      window.location.href = 'thankyou.html';
+      return true;
+
+    })
+  })
+
+function validate(){
 
     var name = document.form.name;
     var email = document.form.email;
@@ -11,7 +89,7 @@ function validate(){
     var msg = document.form.msg;
     var error_message = document.getElementById("error_message");
     
-    error_message.style.padding = "10px";
+    // error_message.style.padding = "2px";
     
     var text;
     if(name.value.length <= 0){
@@ -37,10 +115,7 @@ function validate(){
       error_message.innerHTML = text;
       return false;
     }
-    // alert("Form Submitted Successfully!");
-    // window.location.assign("sample.html")
-    // setTimeout("location.href = 'https://www.tutorialspoint.com/javascript/javascript_page_redirect.htm';",5000);
-    
+  
     setTimeout(function() {window.location = "thankyou.html" });
 
     return true;

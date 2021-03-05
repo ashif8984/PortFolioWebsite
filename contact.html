@@ -28,38 +28,17 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
     integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&family=Nunito&family=Piedra&display=swap"
-    rel="stylesheet">
-
-    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&family=Nunito&family=Piedra&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
-
-
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
   
-
-  <script type="text/javascript" src="js/script.js"></script>
-
 
   <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
 
-  <style>
-    #error_message{
-    margin-bottom: 20px;
-    background: #fe8b8e;
-    /* background: url('/images/no.png'); */
-    padding: 0px;
-    text-align: center;
-    font-size: 16px;
-    transition: all 0.5s ease;
-  }
-   
-  </style>
 
 
 </head>
@@ -77,7 +56,6 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
           <a class="nav-item nav-link " href="index.html"><i class='fas fa-home' style='font-size:22px'></i> Home</a>
-         
           <a class="nav-item nav-link " href="about.html"><i class="fa fa-user-circle" style="font-size:22px"></i> AboutMe</a>
           <a class="nav-item nav-link " href="blog.html"><i class="fa fa-bookmark" style="font-size:22px"></i>  Blogs</a>
           <a class="nav-item nav-link nav-active" href="contact.html"><i class="fa fa-paper-plane" style="font-size:22px"></i> Contact</a>
@@ -88,31 +66,25 @@
   </header>
 
   <main>
- 
-    <form name="form" id="form" onsubmit="return validate();">
-
-
+    
+    <!-- Form Object -->
+    <form class="contactForm" method="POST"  onsubmit=""> 
       <div class="form-container">
         <div class="contact-box">
           <div class="left"></div>
           <div class="right">
             <h2>Contact Me</h2>
 
+            <input type="text" class="field" id="name" placeholder="Your Name">
+            
+            <input type="text" class="field" id="email" placeholder="Your Email">
 
-            <!-- name  -->
-            <div id="error_message"></div>
-            <input type="text" class="field" name="name" placeholder="Your Name">
-        
-            <input type="text" class="field" name="email" placeholder="Your Email">
+            <input type="text" class="field" id="phone" placeholder="Your Phone">
 
-            <input type="text" class="field" name="phone" placeholder="Your Phone">
-
-            <textarea class="field area" name="msg" placeholder="Message"></textarea>
+            <textarea class="field area" id="msg" placeholder="Message"></textarea>
 
             <button type="submit" class="btn">Send</button>
             
-
-
           </div>
         </div>
       </div>
@@ -172,6 +144,10 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="js/script.js"></script>
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
