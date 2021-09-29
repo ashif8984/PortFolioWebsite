@@ -16,10 +16,13 @@ h1{
 .btn{
     margin-top: 20px;
     background-color: #9088d4;
+    color: black;
+    font-size: 13px;
 }
 
 .btn:hover {
   background-color: #892cdc;
+  transform: scale(1.1);
 }
 
 
@@ -27,14 +30,17 @@ h1{
     font-size: 20px;
     color: #52057b;
     font-family: 'Open Sans', sans-serif;
+    
 }
 .card-detail{
     font-size: 15px;
     font-family: 'Bree Serif', serif;
     
+    
 }
 .crd-bod{
     background-color: #d8d3cd;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 .card-img-top{
     height: 10rem;
@@ -43,9 +49,11 @@ h1{
 .row {
     margin-bottom: 20px;
     
+    
 }
 .card-class{
     margin-right: -10px;
+    
 }
 
 @media screen and (max-width: 600px){

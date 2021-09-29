@@ -42,74 +42,50 @@ html {
     font-family: 'Noto Sans', sans-serif;
     
   }
- 
-.navbar{
-  background-color: #1a508b;
 
-}
-
-.navlogo{
-  display: inline;
-  margin-left: 30px;
-  word-spacing: 8px;
-  font-family: 'Playball', cursive;
-  font-size: xx-large;
-  color: white;
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-.navlogo:hover{
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  text-decoration: none;
-  color: #ffcc29;
-}
-
-.nav-item{
-  display: inline;
-  margin-left: 30px;
-  word-spacing: 8px;
+  .navbar{
+    background-color: #1a508b;
+  } 
+  .nav-item{
+    display: inline;
+    margin-left: 10px;
+    word-spacing: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    font-weight: inherit;
+  }
+  .nav-item:hover{
+    /* trasitionproperty */
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    color: #c0e218;
   
-  font-family: 'Alfa Slab One', cursive;
-  font-family: 'Poppins', sans-serif;
-  font-size: larger;
-  color: white;
+  }
 
-  /* trasitionproperty */
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
+  .navlogo{
+    display: inline;
+    margin-left: 10px;
+    word-spacing: 8px;
+    font-family: 'Playball', cursive;
+    font-size: xx-large;
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
 
-.nav-item:hover{
-  color: #c0e218;
+  } 
+  .navlogo:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    text-decoration: none;
+    color: #c0e218;
+  } 
 
-  /* trasitionproperty */
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-
-}
-
-.nav-active{
-  color: #c0e218;
-  border-bottom: 4px solid #c0e218;
-}
-
-
-
-
+  .nav-active{
+    color: #c0e218;
+    border-bottom: 4px solid #c0e218;
+  }
+  
+  
 
 /* Card Styles */
 
@@ -139,10 +115,9 @@ html {
   line-height: 1;
   color: black;
 
-
 }
 .card-text{
-  font-size: 18px;
+  font-size: 1.3rem;
   text-align: center;
   font-family: 'Rubik', sans-serif;
   color: black;
@@ -205,7 +180,7 @@ html {
   }
 
 .abt_btn:hover {
-    background-color: #7579e7;
+    background-color: #1ab7af;
     
     /* color: whitesmoke; */
     color: black;
@@ -293,8 +268,14 @@ html {
   
 }
 
-
+.feature-title{
   
+  font-size: 20x;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  color: black;
+}
+
   .skill-row {
     width: 50%;
     margin: 100px auto 100px auto;
@@ -303,13 +284,13 @@ html {
   }
   .skill-cloud {
     
-    /* padding-left: 30px; */
+    
     padding-top: 3rem;
-    /* padding-right: 50px; */
-    margin-left: 100px;
-    width: 15rem;
+    
+    margin-left: 150px;
+    width: 10rem;
     height: 10rem;
-    opacity: 0.9;
+    opacity: 1.5;
     
   }
   .skill-food {
@@ -327,15 +308,20 @@ html {
   }
   .hobby-first{
     padding-left: 10px;
-    padding-right: 20px;
+    padding-right: 10px;
     margin-left: 50px;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     font-size: 1.3rem;
+    font-family: 'Rubik', sans-serif;
+    color: black;
   }
+
+  
 
 
   .carousel-item{
-    padding: 3% 7%;
+    padding: 1% 9%;
+    
   }
 
   .rounded {
@@ -396,31 +382,30 @@ footer a:hover {
 }
 
 ul.list-unstyled{
-  list-style: none;
   display: inline;
-  
-  margin-left: 0px;
+  font-size: 30px;
 }
 
 
 ul.list-unstyled li {
   font-size: 30px;
-  margin: 0px 0px;
-  margin-left: 0px;
+  padding-left: 60px;
   
 }
 
 .list-unstyled li a {
   font-size: 20px;
+  padding-right: 20px;
+  word-spacing: 10px;
 }
 
 .footer-middle{
   position: relative;
   padding-top: 2rem;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 .heading-footer{
-  text-align: center;
+  text-align: left;
 }
 
 .copy {
@@ -437,6 +422,7 @@ ul.social-network {
   display: inline;
   word-spacing: 20px;
   margin-left: 0px;
+  padding-left: 56px;
   
 }
 
@@ -464,9 +450,10 @@ ul.social-network li {
  
 }
 .footer-text{
-  padding-left: 30px;
+  padding-left: 56px;
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
+  text-align: left;
 }
 .social-circle li i {
   margin: 0;
@@ -492,9 +479,7 @@ ul.social-network li {
     font-size: 3.5rem;
   }
 
-  .navbar-toggler-icon{
-   background-image: url("/images/ham.png");
-  }
+
 
   .active{
     color: #c0e218;
@@ -512,17 +497,27 @@ ul.social-network li {
 
   .skill-cloud {
     margin-left: 50px;
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     
   }
 
+
   .feature-title{
     font-size: 20px;
+    text-align: center;
   }
 
   .hobby-first{
-    font-size: 1.0rem;
+    font-size: 1.1rem;
+  }
+
+  .card-text{
+    font-size: 1.1rem;
+
   }
 
   .news-title{
@@ -583,10 +578,7 @@ ul.social-network li {
     text-decoration: none;
   }
 
-  .list-unstyled li a {
-    padding-left: 20px;
-    font-size: 18px;
-  }
+ 
 
   .footer-text{
     font-size: 16px;
@@ -600,10 +592,6 @@ ul.social-network li {
   .copy {
     font-size: 15px;
   }
-
-
-
-
 
 }
 
