@@ -1,7 +1,9 @@
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
+  
  }
+
 
 .bd-placeholder-img {
     font-size: 1.125rem;
@@ -195,7 +197,7 @@ html {
     padding-bottom: 8rem;
     padding-left: 1rem;
     margin-bottom: 0px;
-    background-color: #d1c145;
+    background-color: #FFD31D;
    
   }
 
